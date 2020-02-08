@@ -1,0 +1,54 @@
+
+$nav-background: #fff;
+
+@font-face {
+    font-family: WonolandPark;
+    src: url("../fonts/WonolandPark.otf") format("opentype");
+}
+
+.navbar-container {
+    background-color: $nav-background;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    
+}
+
+.logo-container {
+    font-family: 'WonolandPark', serif;
+    color: #4c4c4c;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    align-self: center;
+
+    .logo {
+        width: 100px;
+        margin: 0 20px;
+    }
+}
+
+.link-container {
+
+    margin-top: 5px;
+    
+    
+    a { 
+        margin: 0 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #4c4c4c; 
+        font-size: 1.3rem;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+
+}

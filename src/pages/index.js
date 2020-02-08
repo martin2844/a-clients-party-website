@@ -1,3 +1,14 @@
-import React from "react"
+import React from 'react';
+import Layout from '../layout/Layout';
 
-export default () => <div>Hello world!</div>
+
+import '../stylesheets/index.scss'
+const Index = () => {
+    return (
+        <Layout>
+            camper Party
+        </Layout>
+    )
+}
+
+export default Index

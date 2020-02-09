@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../stylesheets/navbar.scss';
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import { graphql, useStaticQuery }  from 'gatsby';
 
 
 
-const Navbar = () => {
+
+
+
+
+const Navbar = ({position}) => {
 
     const logo = useStaticQuery(graphql`
     query {
@@ -14,8 +17,8 @@ const Navbar = () => {
            edges {
              node {
                childImageSharp {
-                 fixed(width: 150) {
-                     ...GatsbyImageSharpFixed
+                 fluid(maxWidth: 150) {
+                     ...GatsbyImageSharpFluid
                      originalName
                  }
                }
@@ -26,27 +29,41 @@ const Navbar = () => {
         }
     
     `);
-
     
+    
+    
+   
+    
+    const [navBarClass, setNavBarClass] = useState('navbar-container');
+
+    useEffect(() => {
+        
+        position >= 101 ? setNavBarClass("navbar-container short animated slideInDown") : setNavBarClass("navbar-container");
+
+
+    }, [position])
 
     let logoImageSrc = logo.icons.edges.filter((node) => {
-        return node.node.childImageSharp.fixed.originalName === "logo.png";
+        return node.node.childImageSharp.fluid.originalName === "logo.png";
     })
-    let logoImage = logoImageSrc[0].node.childImageSharp.fixed ;
+    let logoImage = logoImageSrc[0].node.childImageSharp.fluid ;
+
 
     return (
         <div>
-        <section className="navbar-container">
+        <section className={`${navBarClass}`}>
+            <Link to="/">
             <div className="logo-container">
-                <Img className="logo" fixed={logoImage} alt="camper party logo" />
+                <Img className="logo" fluid={logoImage} alt="camper party logo" />
                 <h1>Camper party</h1>
                 </div>
+            </Link>
             <div className="link-container">
                 <Link to="/">Incio</Link>
-                <Link to="/">Sobre Camper Party</Link>
-                <Link to="/">Serivicio</Link>
-                <Link to="/">Galeria</Link>
-                <Link to="/">Contacto</Link>
+                <Link to="/acerca">Sobre Camper Party</Link>
+                <Link to="/servicio">Serivicio</Link>
+                <Link to="/galeria">Galeria</Link>
+                <Link to="/contacto">Contacto</Link>
             </div>
         </section>
             

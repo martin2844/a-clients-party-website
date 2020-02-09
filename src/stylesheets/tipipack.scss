@@ -1,0 +1,126 @@
+.pack-container {
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 325px;
+
+}
+
+.pack-inner-container{
+    background-color: #78787A;
+    border-radius: 15px;
+}
+
+.pack-title-container {
+
+    
+    h2 {
+        font-family: 'WonolandPark', serif;
+        font-size: 2rem;
+    }
+    border-radius: 10px;
+    padding: 15px 60px;
+    margin: 20px 40px;
+
+}
+
+.pack-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    span {
+        font-size: 1.3rem;
+        padding: 15px 0;
+    }
+
+}
+
+
+
+.salmon {
+ 
+    span:nth-child(n) {
+        border-top: 1px solid #F37C98;
+        border-bottom: 1px solid #F37C98;
+    }
+
+    span:first-child {
+        border-top: 4px solid #F37C98;
+    }
+
+
+    span:last-child {
+        border-top: 2px solid #F37C98;
+        border-bottom: none;
+        font-size: 2rem;
+    }
+  
+}
+
+.green {
+    span:nth-child(n) {
+        border-top: 1px solid #9BCDCC;
+        border-bottom: 1px solid #9BCDCC;
+    }
+
+    span:first-child {
+        border-top: 4px solid #9BCDCC;
+    }
+
+
+    span:last-child {
+        border-top: 2px solid#9BCDCC;
+        border-bottom: none;
+        font-size: 2rem;
+    }
+}
+
+.pink {
+    span:nth-child(n) {
+        border-top: 1px solid #D494A2;
+        border-bottom: 1px solid #D494A2;
+    }
+
+    span:first-child {
+        border-top: 4px solid #D494A2;
+    }
+
+
+    span:last-child {
+        border-top: 2px solid#D494A2;
+        border-bottom: none;
+        font-size: 2rem;
+    }
+}
+
+
+.salmonbg {
+    background-color: #F37C98;
+}
+
+.greenbg {
+    background-color: #9BCDCC;
+}
+
+.pinkbg {
+    background-color: #D494A2;
+}
+
+
+@media screen and (max-width: 1100px) { 
+   
+   
+    .pack-container {
+      
+        padding: 20px;
+    
+    }
+  
+
+}

@@ -6,21 +6,45 @@ $nav-background: #fff;
     src: url("../fonts/WonolandPark.otf") format("opentype");
 }
 
+@font-face {
+    font-family: TwCen;
+    src: url("../fonts/tw-cen.ttf");
+}
+
+
 .navbar-container {
     background-color: $nav-background;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 150px;
+    a {
+        text-decoration: none;
+    }
     
 }
 
+.navbar-container.short {
+    height: 100px;
+    background-color: rgba(255,255,255,0.5);
+}
+
 .logo-container {
-    font-family: 'WonolandPark', serif;
-    color: #4c4c4c;
-    font-size: 2.2rem;
-    letter-spacing: 2px;
+ 
+
+    h1 {
+        font-family: 'WonolandPark', serif;
+        color: #4c4c4c;
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+ 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,7 +59,7 @@ $nav-background: #fff;
 
 .link-container {
 
-    margin-top: 5px;
+    margin-top: 25px;
     
     
     a { 
@@ -43,12 +67,87 @@ $nav-background: #fff;
         text-decoration: none;
         text-transform: uppercase;
         color: #4c4c4c; 
-        font-size: 1.3rem;
+        font-size: 1.6rem;
+        font-family: 'TwCen', Arial, Helvetica, sans-serif;
 
         &:hover {
-            color: #000;
+            color: #F9C7DC;
         }
     }
 
+
+}
+
+
+
+// tablet
+@media screen and (max-width: 1200px) { 
+
+    .link-container {
+        display: none;
+    }
+
+    
+.navbar-container {
+ 
+    
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+
+}
+
+// mobile
+@media screen and (max-width: 600px) { 
+
+ 
+    .logo-container {
+        h1 {
+            font-size: 3rem;
+        }
+     
+        padding: 10px;
+     
+        
+        .logo {
+            object-fit: contain;
+            width: 80px;
+        }
+    }
+    
+    
+
+}
+
+
+// mobile
+@media screen and (max-width: 450px) { 
+
+ 
+    .logo-container {
+        h1 {
+            font-family: 'WonolandPark', serif;
+            color: #4c4c4c;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+     
+        display: flex;
+        flex-direction: column;
+        align-items: flex;
+        padding: 10px;
+        align-self: flex;
+        justify-content: flex-end;
+        
+        .logo {
+            object-fit: contain;
+            width: 60px;
+            margin: 0 20px;
+        }
+    }
+    
+    
 
 }

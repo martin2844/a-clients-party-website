@@ -27,8 +27,6 @@ const Servicio = () => {
     
     `);
     
-        console.log(star);
-
     let starImageSrc = star.icons.edges.filter((node) => {
         return node.node.childImageSharp.fluid.originalName === "star.png";
     })
@@ -40,7 +38,7 @@ const Servicio = () => {
     const extraInfo = [
         {
             title: "Bandeja de desayuno",
-            desc: "Incluye bandeja, vaso con tapa o botella, plato, servilleta, cupcake, jugo de naranja o chocolatada",
+            desc: "Incluye bandeja, vaso con tapa, plato, servilleta, cupcake, jugo de naranja o chocolatada",
             price: 210,
             color: "green"
         },
@@ -66,27 +64,27 @@ const Servicio = () => {
             title: "Ambientación con globos de hielo",
             desc: "Opción de elegir colores",
             price: "Consultanos precios",
-            color: "salmon"
+            color: "green"
         },
         {
             title: "Baul sorpresa",
             desc: "Incluye cotillon para jugar y sacarse fotos",
             price: 150,
-            color: "green"
+            color: "salmon"
         }
     ]
 
 
     let mapExtraInfo = extraInfo.map((item) => {
         return (
-            <div className="info-iteree">
+            <div key={item.title} className="info-iteree">
                  <div className="star-container">
                      <Img className="star" fluid={starImage} />
                  </div>
                  <div className="info-container">
                       <h3 className={`title-${item.color}`}>{item.title}</h3>
                          <p>({item.desc})</p>
-                     <p className="pack-price">{typeof item.price === "string" ? item.price : ("$" + item.price + " x persona")}</p>
+                     <div className="pack-price">{typeof item.price === "string" ? item.price : ("$" + item.price + " x persona")}</div>
                  </div>
             </div>
         )

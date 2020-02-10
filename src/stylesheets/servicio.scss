@@ -59,26 +59,35 @@
 
 
 .title-green {
+    margin-bottom: 2px;
     color: #9BCDCC;
 }
 
 .title-pink {
+    margin-bottom: 2px;
     color: #F37C98;
 }
 
 .title-salmon {
+    margin-bottom: 2px;
     color: #D494A2;
 }
 
 .pack-price {
-    color: #FFD662;
+   // color: #ffbb00;
+    color: #fff;
+    margin-top: 35px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: fit-content;
     text-align: center;
-    margin-top: 20px;
 }
 
 .star-container {
    .star {
-    width: 50px;
+       margin-top: -5px;
+    width: 30px;
    }
    align-self: flex-start;
     margin-right: 10px;
@@ -92,12 +101,47 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    .pack-extras-container {
+        width: 500px;
+    }
   
+
+    .star-container {
+        .star {
+         width: 30px;
+        }
+      
+     }
+
+     .pack-title {
+        margin: 30px 40px 20px;
+        color: #fff;
+        font-size: 1.3rem;
+    }
 
 }
 
 // mobile
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 500px) { 
+
+    .pack-extras-container {
+        width: 500px;
+    }
+  
+
+    .star-container {
+        .star {
+         width: 20px;
+        }
+      
+     }
+
+     .pack-title {
+        margin: 30px 40px 20px;
+        color: #fff;
+        font-size: 1.1rem;
+    }
 
     
 

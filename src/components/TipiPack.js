@@ -52,7 +52,7 @@ switch (packType) {
                 <div className={`pack-list-container ${info.color}`}>
                 
                     {info.inc.map((e) => {
-                        return <span>{e}</span>
+                        return <span key={e}>{e}</span>
                     })}
                 <span>${info.price} x Carpa Tipi</span>
                

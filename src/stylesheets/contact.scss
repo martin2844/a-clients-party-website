@@ -1,0 +1,26 @@
+.contact-top {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-top-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-calendar { 
+    width: 125px;
+    height: 125px;
+    margin-top: -10px;
+}
+
+.contact-popup-grey {
+    text-align: center;
+    background-color: #757575;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}

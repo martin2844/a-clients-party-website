@@ -32,6 +32,14 @@ module.exports = {
       },
       
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `party`,
+        path: path.join(__dirname, `src`, `party-pictures`),
+      },
+      
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

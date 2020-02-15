@@ -25,7 +25,7 @@ switch (packType) {
         info = {
             title: "Camper Magic",
             inc: ["Camper Basic +", "Guirnaldas de luces led", "Decoración con temática a elegir", "Props para sacarse fotos",
-            "Antifaces personalizados", "item extra" ],
+            "Antifaces personalizados" ],
             price: 890,
             color: "green"
         }

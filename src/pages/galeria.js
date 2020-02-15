@@ -72,7 +72,6 @@ const Galeria = () => {
     
     `);
 
-    console.log(partyQuery.party.edges);
     const imageMap = partyQuery.party.edges.map((image) => {
      let theFluid = image.node.childImageSharp.fluid
         return (

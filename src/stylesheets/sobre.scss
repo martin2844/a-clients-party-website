@@ -1,0 +1,26 @@
+.sobre-top {
+    color: #4c4c4c;
+    margin: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-size: 1.8rem;
+        margin: 10px 0;
+        
+    }
+    p {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-left: -50px;
+        padding: 0 50px;
+    }
+    .align-left {
+        margin-left: 100px;
+        font-size: 2rem;
+    }
+    .align-right {
+        align-self: flex-end;
+        margin-right: 130px;
+    }
+}

@@ -83,7 +83,7 @@ const Layout = (props) => {
                 <Link to="/acerca"><li>Sobre Camper Party</li></Link>
                 <Link to="/servicio"><li>Serivicio</li></Link>
                 <Link to="/galeria"><li>Galeria</li></Link>
-                <Link to="/contacto"><li>Info</li></Link>
+                <Link to="/contacto"><li>Contacto</li></Link>
     </ul>
   </div>
 </nav>

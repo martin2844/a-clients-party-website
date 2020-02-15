@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+*:focus {
+    outline: none;
+}
+
 .contact-bottom {
     margin-top: 50px;
     display: flex;
@@ -39,7 +43,9 @@
 .contact-heading {
     width: 50%;
     p {
+        margin-top: 20px;
         font-size: 1.4rem;
+        color: #4c4c4c;
     }
 }
 
@@ -60,8 +66,13 @@
             margin: 10px 0;
             padding: 15px;
             background-color: none;
-            border: 2px solid #78787A; 
+            border: none;
             border-radius: 15px;
+            font-size: 1.2rem;
+            color: #757575;
+            &::placeholder {
+                font-size: 1.2rem; 
+             }
         }
 
         input {
@@ -69,7 +80,19 @@
         }
 
         textarea {
-            min-height: 150px;
+            min-height: 180px;
+            
+        }
+
+        button { 
+            align-self: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border:none;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #757575;
         }
     }
 }
@@ -115,4 +138,63 @@
     width: 40px;
     min-height: 25px;
     margin: 0 10px 10px;
+}
+
+
+@media screen and (max-width: 1100px) { 
+   
+  .contact-top {
+      flex-direction: column;
+  }
+
+  .contact-bottom {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+
+  .contact-info {
+      margin-top: 40px;
+      width: 30%;
+  }
+
+  .contact-top-right {
+      margin-top: 20px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .contact-heading {
+        width: 80%;
+    }
+
+    .contact-form {
+        form {
+
+            .group {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+        }
+    }
+
+    .contact-info {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-info {
+        width: 80%;
+        padding: 20px 40px;
+    }
 }

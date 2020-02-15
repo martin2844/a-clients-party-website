@@ -44,13 +44,14 @@
     width: 50%;
     p {
         margin-top: 20px;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         color: #4c4c4c;
     }
 }
 
 .contact-form {
     width: 50%;
+    margin-top: -60px;
     form {
         display: flex;
         flex-direction: column;
@@ -105,6 +106,7 @@
     padding: 30px 60px;
     background-color:#F3D3D8;
     border-radius: 20px;
+    margin-top: -50px;
 
 }
 

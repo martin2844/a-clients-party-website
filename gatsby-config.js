@@ -40,6 +40,14 @@ module.exports = {
       },
       
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `about`,
+        path: path.join(__dirname, `src`, `about-pictures`),
+      },
+      
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

@@ -45,7 +45,7 @@ const Contacto = () => {
     return (
         <Layout>
 
-            <section className="contact-top">
+            <section className="contact-top animated fadeIn">
             <div className="contact-heading">
             <p>Para cualquier aclaración o consulta sobre nuestros servicios, por favor completa el siguiente formulario
               y nos pondremos en contacto a la mayor brevedad posible.
@@ -56,7 +56,7 @@ const Contacto = () => {
             <p className="contact-popup-grey">Pedí un presupuesto y reservá la fecha <br/> ¡ÚLTIMAS FECHAS DISPONIBLES!</p>
             </div>
             </section>
-            <section className="contact-bottom">
+            <section className="contact-bottom animated fadeIn">
               <div className="contact-form">
               <form name="contact" method="POST" data-netlify="true" action="/success">
                     <input type="hidden" name="form-name" value="contact"/>

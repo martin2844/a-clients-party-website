@@ -61,7 +61,7 @@ const Navbar = ({position}) => {
             <div className="link-container">
                 <Link to="/">Incio</Link>
                 <Link to="/sobre">Sobre Camper Party</Link>
-                <Link to="/servicio">Serivicio</Link>
+                <Link to="/servicio">Servicios</Link>
                 <Link to="/galeria">Galeria</Link>
                 <Link to="/contacto">Contacto</Link>
             </div>

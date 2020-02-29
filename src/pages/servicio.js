@@ -69,7 +69,7 @@ const Servicio = () => {
         {
             title: "Baul sorpresa",
             desc: "Incluye cotillon para jugar y sacarse fotos",
-            price: 150,
+            price: "$500",
             color: "salmon"
         }
     ]

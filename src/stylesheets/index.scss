@@ -78,7 +78,7 @@
         
     
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-bottom: 20px;
             color: #4a4c49;
             letter-spacing: 2px;
@@ -93,7 +93,27 @@
     
     }
 
+
+
     
     
 
 }
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+       
+        .main-motto {
+            margin-bottom: 60px;
+
+            h1 {
+                font-size: 1.6rem;
+               
+            }
+    
+        }
+
+
+    }

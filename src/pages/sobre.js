@@ -49,8 +49,8 @@ const Acerca = () => {
         <Layout>
             <section className="sobre-top animated fadeIn">
                 <h1 className="align-left">Amamos los detalles</h1>
-                <p>Creamos espacios según la técnica elegida. Fiestas personalizadas con carpas Tipi. Podes sumarle snacks divertidos para la noche, bandeja con alimentos para el desayuno y bolsitas mágicas para que se lleven los invitados de souvenir</p>
-                <h1 className="align-right">LA FIESTA DE TUS SUEÑOS EN CASA</h1>
+                <p>Creamos espacios según la temática elegida. Fiestas personalizadas con carpas Tipi. Podes sumarle snacks divertidos para la noche, bandeja con alimentos para el desayuno y bolsitas mágicas para que se lleven los invitados de souvenir</p>
+                <h1 className="align-right" style={{fontSize: "2.2rem"}}>La fiesta de tus sueños en casa!</h1>
             </section>
             <section className="sobre-bottom animated fadeIn">
                 <div className="sobre-left">

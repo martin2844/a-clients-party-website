@@ -15,8 +15,9 @@ switch (packType) {
     case "basic":
         info = {
             title: "Camper Basic",
-            inc: ["Carpa Tipi (dos niños por carpa)", "Colchonetas + fundas", "Almohadas + Fundas", 
-            "Almohadones decorativos", "Mantas y Alfombras", "Antifaces",  "Guirnaldas Decorativas" ],
+            inc: ["Carpa Tipi (dos niños por carpa)", "Colchonetas", "Almohadas para dormir", 
+            "Almohadones temáticos decorativos", "Frazadas polar soft", "Guirnaldas Decorativas de tela y led", "Decoración con temática a elegir", 
+            "Mobiliario (mesa + alfombras)", "Invitación digital para mandar via whatsapp" ],
             price: 750,
             color: "salmon"
         }
@@ -24,18 +25,18 @@ switch (packType) {
         case "magic":
         info = {
             title: "Camper Magic",
-            inc: ["Camper Basic +", "Guirnaldas de luces led", "Decoración con temática a elegir", "Props para sacarse fotos",
-            "Antifaces personalizados" ],
-            price: 890,
+            inc: ["Camper Basic +", "Marco de selfie personalizado", "Props para sacarse fotos",
+            "Antifaces temáticos", "Pizarra para puerta de entrada" ],
+            price: 950,
             color: "green"
         }
         break;
         case "premium":
             info = {
                 title: "Camper Premium",
-                inc: ["Camper Magic +", "Invitación digital para mandar por Whatsapp", "Marco de selfie personalizado",
-                 "Pizarra para puerta de entrada"],
-                price: 1390,
+                inc: ["Camper Basic +", "Camper Magic + " , "Baúl sorpresa de cotillón", "Bandeja de desayuno",
+                 "Souvenir para cada invitado"],
+                price: 1450,
                 color: "pink"
             }
             break;

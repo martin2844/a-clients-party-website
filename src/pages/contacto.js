@@ -53,7 +53,7 @@ const Contacto = () => {
             </div>
             <div className="contact-top-right">
             <Img className="contact-calendar" fluid={calendarIcon} alt={calendarIcon.originalName}/>
-            <p className="contact-popup-grey">Pedí un presupuesto y reservá la fecha <br/> ¡ÚLTIMAS FECHAS DISPONIBLES!</p>
+            <p className="contact-popup-grey">Pedí un presupuesto y reservá la fecha <br/> ¡CONSULTÁ FECHAS DISPONIBLES!</p>
             </div>
             </section>
             <section className="contact-bottom animated fadeIn">

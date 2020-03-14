@@ -23,6 +23,19 @@ const Servicio = () => {
              }
            }
          }
+         tematicas: allFile(sort: {fields: [name], order: ASC}, filter: { sourceInstanceName: { eq: "tematicas" } }) {
+            edges {
+              node {
+                childImageSharp {
+                  fluid(quality: 100, maxWidth: 200) {
+                      ...GatsbyImageSharpFluid
+                      originalName
+                  }
+                }
+                
+              }
+            }
+          }
         }
     
     `);
@@ -39,7 +52,7 @@ const Servicio = () => {
         {
             title: "Bandeja de desayuno",
             desc: "Incluye bandeja, vaso con tapa, plato, servilleta, cupcake, jugo de naranja o chocolatada",
-            price: 210,
+            price: 250,
             color: "green"
         },
         {
@@ -71,6 +84,18 @@ const Servicio = () => {
             desc: "Incluye cotillon para jugar y sacarse fotos",
             price: "$500",
             color: "salmon"
+        },
+        {
+            title: "Book de Fotos",
+            desc: "Digital o impreso",
+            price: "Consultanos precios",
+            color: "pink"
+        },
+        {
+            title: "Props para sacarse fotos",
+            desc: "Varían según la temática elegida",
+            price: "$500",
+            color: "green"
         }
     ]
 
@@ -90,6 +115,29 @@ const Servicio = () => {
         )
     })
 
+    const tematicas = ["unicornio", "futbol", "tropical", "selva & militar", "emojis"]
+
+    let mapThemes =  tematicas.map((tematica) => {
+        
+        let themeImageSrc = star.tematicas.edges.filter((node) => {
+            let filter = tematica
+            if(tematica === "selva & militar") {
+                filter = "selva"
+            }
+            return node.node.childImageSharp.fluid.originalName === ("tematica-" + filter + ".png");
+        })
+        let themeImage = themeImageSrc[0].node.childImageSharp.fluid;
+        console.log(themeImageSrc);
+        return (
+                <div key={tematica} className="info-iteree2">
+                    <div class="theme-container">
+                    <Img className="theme-image" fluid={themeImage} />
+                    <p>{tematica}</p>
+                    </div>
+                </div>
+        )
+    })
+
 
     return (
         <Layout>
@@ -105,8 +153,13 @@ const Servicio = () => {
                         <div className="pack-title">
                             <h3>A cualquiera de estos packs podes agregarle estos items aparte</h3>
                         </div>
-                        {mapExtraInfo}
-
+                        {mapExtraInfo}  
+                    </div>
+                    <div className="pack-extras-container">
+                    <div className="pack-title">
+                            <h3>Nuestras temáticas disponibles:</h3>
+                        </div>
+                    {mapThemes}
                     </div>
                     </div>
         </Layout>

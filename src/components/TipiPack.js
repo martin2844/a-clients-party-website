@@ -17,7 +17,7 @@ switch (packType) {
             title: "Camper Basic",
             inc: ["Carpa Tipi (dos niños por carpa)", "Colchonetas", "Almohadas para dormir", 
             "Almohadones temáticos decorativos", "Frazadas polar soft", "Guirnaldas Decorativas de tela y led", "Decoración con temática a elegir", 
-            "Mobiliario (mesa + alfombras)", "Invitación digital para mandar via whatsapp" ],
+            "Mobiliario (mesa + alfombras)", "Invitación digital para mandar vía whatsapp" ],
             price: 750,
             color: "salmon"
         }

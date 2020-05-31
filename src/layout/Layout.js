@@ -79,7 +79,7 @@ const Layout = (props) => {
     but hey, it's pure CSS magic.
     --> */}
     <ul id="menu">
-                <Link to="/"><li>Incio</li></Link>
+                <Link to="/"><li>Inicio</li></Link>
                 <Link to="/sobre"><li>Sobre Camper Party</li></Link>
                 <Link to="/servicio"><li>Servicio</li></Link>
                 <Link to="/galeria"><li>Galeria</li></Link>
